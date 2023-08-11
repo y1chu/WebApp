@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div class="login-container">
+    <img src="~/path_to_logo.png" alt="Logo" class="login-logo" />
+    <form method="post" action="/Home/Login">
+        <div class="input-container">
+            <input type="email" name="Email" placeholder="Input your E-mail." class="login-input" />
+        </div>
+        <div class="input-container">
+            <input type="password" name="Password" placeholder="Input your Password" class="login-input" />
+        </div>
+        <button type="submit" class="login-button">Login</button>
+    </form>
+    <div class="footer-links">
+        <a href="#" class="forgot-link">Forgot Password?</a> | <a href="#" class="register-link">Register New Account</a>
+    </div>
+</div>
